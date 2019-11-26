@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple-chat.com</title>
+	<link rel='icon' href='favicon.ico' type='image/x-icon'>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/client.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/client.css">
+</head>
+<body id="bd" onload="load()">
+	<div id="parent">
+		<ul id="messages"></ul>
+		<textarea id="msg" name="msg" rows="9" placeholder="Enter your message. You can send it by clicking <<Send>> button or pressing Ctrl+Enter." onkeypress="sendOnCtrlEnter(event)" autofocus></textarea>
+		<button id="btn" onclick="send()">Send</button>
+	</div>
+</body>
+</html>

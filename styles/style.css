@@ -1,0 +1,73 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+	background: rgb(111,223,224);
+	background: linear-gradient(135deg, rgba(111,223,224,1) 0%, rgba(0,65,112,1) 100%);
+}
+#wlcm, h2, #parent{
+	display: block;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 25vw;
+	margin-top: 25vh;
+}
+#parent {
+	width: 50vw;
+}
+h2, #parent {
+	margin-top: 0px;
+}
+#pwd {
+	margin-top: 20px;
+}
+#wlcm {
+	font-size: 6vh;
+}
+h2 {
+	font-size: 5vh;
+}
+input {
+	font-family: 'Roboto', sans-serif;
+	font-size: 7vh;
+	width: 50vw;
+	border: none;
+	border-radius:0.4rem 0.4rem 0.4rem 0.4rem;
+}
+button {
+	font-size: 4vh;
+	font-family: 'Roboto', sans-serif;
+	margin: 10px auto 0;
+	height: 9vh;
+	width: 20vw;
+	color: white;
+	display: block;
+	border: none;
+	border-radius:0.4rem 0.4rem 0.4rem 0.4rem;
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 0 2px 0 -1px rgba(0,0,0,0.13), 0 3px 0 -1px rgba(0,0,0,0.08), 0 3px 13px -1px rgba(0,0,0,0.21);
+	background-color: rgba(127, 204, 222, 0.7);
+	text-decoration: none;
+	text-align: center;
+}
+button:hover{
+	background-color: rgba(127, 204, 222, 1);
+}
+@media (max-width: 1000px) {
+	#parent {
+		width: 90vw;
+	}
+	#wlcm {
+		margin-top: 25vh;
+	}
+	input {
+		width: 80vw;
+	}
+	button {
+		position: relative;
+		width: 80vw;
+	}
+}
+#err {
+	color: red;
+}

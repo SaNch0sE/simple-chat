@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin panel</title>
+	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+	<link rel="stylesheet" type="text/css" href="styles/adminp.css">
+	<script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/adminp.js"></script>
+</head>
+<body>
+	<div id="input">
+		<input id="inp" type="text" placeholder="Admin login">
+		<input id="pwd" type="password" placeholder="Admin password"><br>
+		<button type="submit" onclick="connect()">Submit</button>
+		<h4>Create all databases if needed</h4>
+		<button onclick="createdb()">Create</button>
+	</div>
+	<div id="db"></div>
+</body>
+</html>

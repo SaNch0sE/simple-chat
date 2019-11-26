@@ -1,0 +1,141 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+	background: rgb(111,223,224);
+	background: linear-gradient(135deg, rgba(111,223,224,1) 0%, rgba(0,65,112,1) 100%);
+	}
+.cbalink {
+	display: none;
+}
+input {
+	display: none;
+}
+textarea {
+	width: 90%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.2vh;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+	border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+	border-image: none;
+	border-radius:0.4rem 0 0 0.4rem;
+	border-style: none solid solid none;
+	border-width: medium 1px 1px medium;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+	color: #555555;
+	padding: 5px 8px;
+	transition: background-color 0.5s ease 0s;
+}
+textarea:focus {
+	background: none repeat scroll 0 0 #FFFFFF;
+	outline-width: 0;
+}
+#messages::-webkit-scrollbar {
+	width: 0;  /* Remove scrollbar space */
+	background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+#messages::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0);
+}
+#messages {
+	display: block;
+	height: 65vh;
+	max-height: 65vh;
+	overflow-y: scroll;
+	word-wrap: break-word;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3vh;
+}
+button {
+	font-size: 4vh;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	margin-top: 0;
+	height: 25vh;
+	width: 7%;
+	color: white;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-radius:0 0.4rem 0.4rem 0;
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 0 2px 0 -1px rgba(0,0,0,0.13), 0 3px 0 -1px rgba(0,0,0,0.08), 0 3px 13px -1px rgba(0,0,0,0.21);
+	background-color: rgba(127, 204, 222, 0.7);
+	text-decoration: none;
+	text-align: center;
+}
+button:hover{
+	background-color: rgba(127, 204, 222, 1);
+}
+#parent {
+	padding: 0 0 0 5vw;
+	max-width: 90vw;
+	height: 40vh;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+li {
+	clear: left;
+	margin-top: 3vh;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+@media only screen and (max-width: 1024px){
+	textarea {
+		width: 80%;
+	}
+	button {
+		width: 15%;
+		height: 25.3vh;
+	}
+}
+@media only screen and (max-device-width: 769px){
+	#parent {
+		display: block;
+		padding: 0 0 0 3vw;
+	}
+	#messages {
+		height: 60vh;
+	}
+	textarea {
+		display: block;
+		width: 98%;
+		border-radius:0.4rem 0.4rem 0 0;
+		margin-bottom: 0;
+	}
+	button {
+		margin-top: 0;
+		display: block;
+		width: 90%;
+		height: 8vh;
+		border-radius:0 0 0.4rem 0.4rem;
+		box-shadow: 0 1px 0 rgba(255,255,255,0) inset, 0 2px 0 -1px rgba(0,0,0,0), 0 3px 0 -1px rgba(0,0,0,0.08), 0 3px 13px -1px rgba(0,0,0,0.21);
+	background-color: rgba(127, 204, 222, 0.7);
+	}
+}
+@media only screen and (max-device-width: 480px) {
+	#messages {
+		height: 55vh;
+	}
+}
+@media only screen and (max-device-width: 400px), screen and (max-device-height: 360px ) {
+	textarea {
+		width: 97.55%;
+	}
+	button {
+		width: 90%;
+	}
+	#messages {
+		height: 46vh;
+	}
+}
+@media only screen and (max-device-width: 360px) {
+	textarea {
+		width: 98%;
+	}
+	button {
+		width: 90%;
+	}
+}			
